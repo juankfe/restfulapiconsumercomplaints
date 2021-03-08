@@ -18,7 +18,12 @@ git clone https://github.com/juankfe/restfulapiconsumercomplaints.git
 But will not work on heroku because application.properties will be configured to heroku db that doensn't yet have data.
 \src\test\java\complaintsapi\controllers\ComplaintsControllerTests.java
 
-Note: If you want to run the automated tests locally before deploying to heroku, rename application.propertiesLocal to application.properties, install a local PostgreDB, add a "complaints" table to the db and inform the db credentials on this file. When you are ready to deploy to heroku, change the application.properties file back to the original version (same content as application.propertiesHeroku).
+Note: If you want to run the automated tests locally before deploying to heroku:
+a) install a local PostgreDB and add a "restfulapiconsumercomplaints" database.
+b) rename application.propertiesLocal to application.properties informing the db credentials on this file
+c) run the app on localhost
+
+When you are ready to deploy to heroku, change the application.properties file back to the original version (same content as application.propertiesHeroku) and continue to step 4 below.
 
 4. Create your account on heroku.com
 
