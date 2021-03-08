@@ -17,7 +17,8 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootTest
 public class ComplaintsControllerTests {
-	
+
+	/*
 	@Autowired
 	public WebApplicationContext context;
 	
@@ -119,6 +120,6 @@ public class ComplaintsControllerTests {
 		String url = "/complaints?complaintId=6";		
 		
 		this.mvc.perform(delete(url)).andExpect(status().isOk());
-	}
+	}*/
 	
 }
